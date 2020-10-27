@@ -50,7 +50,6 @@ fashion_model = Sequential()
 fashion_model.add(Conv2D(32, kernel_size=(3, 3),activation='linear',input_shape=(28,28,1),padding='same'))
 fashion_model.add(LeakyReLU(alpha=0.1))
 fashion_model.add(MaxPooling2D((2, 2),padding='same'))
-#fashion_model.add(BatchNormalization(1) #
 fashion_model.add(Dropout(0.2)) #
 fashion_model.add(Conv2D(64, (3, 3), activation='linear',padding='same'))
 fashion_model.add(LeakyReLU(alpha=0.1))
